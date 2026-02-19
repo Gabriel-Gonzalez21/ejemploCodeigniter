@@ -4,8 +4,22 @@
 
 <div class="container mt-5">
     <h1>Bootstrap funciona correctamente</h1>
-    <button class="btn btn-success">Botón de prueba</button>
+    
+    <a href="/ofertas">
+        <button class="btn btn-success">
+        Botón de prueba
+        
+        </button>
+    </a>
 </div>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/empresas">
+            <i class="fas fa-building"></i>
+            <span>Empresas</span>
+        </a>
+    </li>
+
 
 <?= $this->endSection() ?>
 

@@ -6,7 +6,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Mi panel</div>
+        <div class="sidebar-brand-text mx-3">Mi Panel</div>
     </a>
 
     <!-- Divider -->
@@ -52,6 +52,15 @@
         </a>
     </li>
 
+    <!-- Test -->
+    <li class= "nav-item">
+        <a href="/test">
+            <i></i>
+            <span>Test</span>
+        </a>
+    </li>
+
+    
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

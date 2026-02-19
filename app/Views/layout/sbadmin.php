@@ -9,6 +9,10 @@
     <!-- SB Admin 2 CSS -->
     <link href="/assets/sbadmin2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="/assets/sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link href="/assets/css/style.css?v=1" rel="stylesheet">
+    
 </head>
 
 <body id="page-top">

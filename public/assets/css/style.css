@@ -1,0 +1,91 @@
+/* ============================
+   ESTILOS PERSONALIZADOS SB ADMIN 2
+   Archivo: custom.css
+   ============================ */
+
+/* Tipografía general */
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #233cc9 !important;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #004aad !important;
+}
+
+.sidebar .nav-item .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    background-color: #00337a !important;
+    color: #ffffff !important;
+}
+
+.sidebar .sidebar-brand {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Topbar */
+.topbar {
+    background-color: #001aff !important;
+}
+
+.topbar .nav-link {
+    color: #ffffff !important;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #004aad !important;
+    border-color: #004aad !important;
+}
+
+.btn-primary:hover {
+    background-color: #00337a !important;
+    border-color: #00337a !important;
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-header {
+    background-color: #004aad !important;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 6px !important;
+    border-color: #cfd4da !important;
+}
+
+.form-control:focus {
+    border-color: #004aad !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 74, 173, 0.25) !important;
+}
+
+/* Tablas */
+.table thead th {
+    background-color: #004aad !important;
+    color: #ffffff !important;
+}
+
+.table tbody tr:hover {
+    background-color: #eef3ff !important;
+}
+
+/* Footer */
+footer.sticky-footer {
+    background-color: #004aad !important;
+    color: #ffffff !important;
+}
