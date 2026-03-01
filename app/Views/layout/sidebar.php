@@ -30,7 +30,7 @@
 
     <!-- Candidatos (Enlaces a módulos) -->
     <li class="nav-item">
-        <a class="nav-link" href="/candidatos">
+        <a class="nav-link" href="/candidato">
             <i class="fas fa-users"></i>
             <span>Candidatos</span>
         </a>
@@ -46,7 +46,7 @@
 
     <!-- Empresas -->
     <li class="nav-item">
-        <a class="nav-link" href="/empresas">
+        <a class="nav-link" href="/empresa">
             <i class="fas fa-building"></i>
             <span>Empresas</span>
         </a>

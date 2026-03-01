@@ -5,24 +5,40 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+// Página pública
 $routes->get('/', 'Home::index');
 
-
-/*Para el test de Boostrap*/
+// Test (pública)
 $routes->get('/test', fn() => view('test'));
 
-/*Ruta de admin*/
-$routes->get('/admin', function () {
-    return view('dashboard');
+// Rutas de login (públicas)
+$routes->get('/login', 'Auth::login');
+$routes->post('/login', 'Auth::doLogin');
+$routes->get('/logout', 'Auth::logout');
+
+// Rutas privadas (requieren login)
+$routes->group('', ['filter' => 'auth'], function($routes) {
+
+    // ADMIN
+    $routes->group('admin', ['filter' => 'role:admin'], function($routes){
+        $routes->get('/', 'Admin\Dashboard::index');
+    });
+
+    // CANDIDATO
+    $routes->group('candidato', ['filter' => 'role:candidato'], function($routes){
+        $routes->get('/', 'Candidato\Dashboard::index');
+    });
+
+    // EMPRESA
+    $routes->group('empresa', ['filter' => 'role:empresa'], function($routes){
+        $routes->get('/', 'Empresa\Dashboard::index');
+    });
+
+    // OFERTAS (si solo admin puede verlas)
+    $routes->group('ofertas', ['filter' => 'role:admin'], function($routes){
+        $routes->get('/', 'Ofertas\Listado::index');
+    });
+
 });
-
-
-/*Ruta de candidatos*/
-$routes->get('/candidatos', 'Candidatos::index');
-
-/*Rutas de ofertas*/
-$routes->get('/ofertas', 'Ofertas::index');
-
-/*Ruta de empresas*/
-$routes->get('/empresas', 'Empresas::index');
 

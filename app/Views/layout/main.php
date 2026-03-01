@@ -14,8 +14,48 @@
 
 <body>
 
+    <!-- Barra de navegación pública -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+
+            <a class="navbar-brand" href="/">Agencia de Colocación</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <?php if (!session()->get('isLoggedIn')): ?>
+                        <!-- Usuario NO logueado -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Iniciar sesión</a>
+                        </li>
+
+                    <?php else: ?>
+                        <!-- Usuario logueado -->
+                        <li class="nav-item">
+                            <span class="nav-link">
+                                Hola, <?= session()->get('usuario_nombre') ?>
+                            </span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="/logout">Cerrar sesión</a>
+                        </li>
+                    <?php endif; ?>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
     <!-- Contenido dinámico -->
-    <?= $this->renderSection('content') ?>
+    <div class="container">
+        <?= $this->renderSection('content') ?>
+    </div>
 
     <!-- jQuery (local) -->
     <script src="/assets/jquery/jquery-4.0.0.min.js"></script>

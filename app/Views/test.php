@@ -14,7 +14,7 @@
 </div>
 
     <li class="nav-item">
-        <a class="nav-link" href="/empresas">
+        <a class="nav-link" href="/empresa">
             <i class="fas fa-building"></i>
             <span>Empresas</span>
         </a>
