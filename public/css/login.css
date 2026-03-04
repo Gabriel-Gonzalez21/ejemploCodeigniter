@@ -1,0 +1,80 @@
+body{
+    background-image: linear-gradient(to left, #042e64, #1b98b9);
+    font-family: 'Calibri', Arial, sans-serif;
+}
+
+
+/* 1. Centrado total en la pantalla */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    min-height: 100vh;      /* Ocupa el 100% de la altura de la ventana */;
+}
+
+/* 2. Contenedor principal (la tarjeta blanca) */
+div {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 350px; /* Ancho máximo del formulario */
+    text-align: center; /* Centra el texto y el logo dentro del div */
+}
+
+/* 3. Estilo del logo */
+.logo {
+    max-width: 300px; 
+    margin-bottom: 20px;
+}
+
+
+/* 4. Estilo del formulario e inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /*etiquetas alineadas a la izquierda */
+}
+
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #e0e0e0;
+}
+input:hover {
+    border-color: #042e64;
+    box-shadow: 0 0 5px rgba(4, 46, 100, 0.2);
+}
+
+
+/* 5. Estilo del botón */
+button {
+    background-color: #042e64;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1b98b9;
+}
+
+/* Mensaje de error */
+p {
+    position: absolute; /* Para que no empuje el formulario hacia abajo al aparecer */
+    top: 20px;
+    background: red;
+    padding: 10px;
+}
+
+#toolbarContainer {
+    display: none !important;
+}
+

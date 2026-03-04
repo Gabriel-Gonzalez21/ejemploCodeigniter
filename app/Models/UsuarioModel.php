@@ -7,6 +7,15 @@ use CodeIgniter\Model;
 class UsuarioModel extends Model
 {
     protected $table = 'usuarios';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['email', 'password', 'nombre', 'activo'];
+    protected $primaryKey = 'ID_usu';
+
+    protected $allowedFields = [
+        'usuario',      // email
+        'password',     // MD5
+        'nombre',
+        'telefono',
+        'passwordMail',
+        'estado',
+        'rol'
+    ];
 }

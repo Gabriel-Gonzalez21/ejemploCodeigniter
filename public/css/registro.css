@@ -1,0 +1,118 @@
+/* 1. Base y Centrado */
+body {
+    background-image: linear-gradient(to left, #042e64, #1b98b9);
+    font-family: 'Calibri', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+input{
+    background-color: #e0e0e0;
+}
+
+/* 2. Tarjeta Estilo Plano (Bordes Rectos) */
+.card {
+    border: none;
+    border-radius: 0 !important;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #eeeeee;
+    border-radius: 0 !important;
+    padding: 20px;
+}
+
+.card-header h4 {
+    margin: 0;
+    color: #042e64;
+    font-weight: bold;
+}
+
+/* 3. Estructura de Formulario Label-Izquierda */
+.mb-3 {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Por defecto en móvil: uno arriba de otro */
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 4. Adaptación para Escritorio (PC) */
+@media (min-width: 768px) {
+    .card {
+        max-width: 700px; /* Un poco más ancho para acomodar el label lateral */
+    }
+
+    .card-body {
+        padding: 3rem;
+    }
+
+    .mb-3 {
+        flex-direction: row;    /* Alineación horizontal */
+        align-items: center;    /* Centrado vertical entre label e input */
+    }
+
+    label {
+        flex: 0 0 180px;        /* Ancho fijo para las etiquetas (alineación perfecta) */
+        margin-bottom: 0;       /* Quitamos el margen inferior */
+        padding-right: 15px;    /* Espacio entre label e input */
+        text-align: right;      /* Alinea el texto a la derecha contra el input */
+    }
+
+    .form-control {
+        flex: 1;                /* El input ocupa el resto del espacio */
+    }
+
+    /* Ajuste para el botón: que se mueva a la derecha o mantenga el ancho */
+    .btn-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* 5. Botón y Otros */
+.btn-primary {
+    background-color: #042e64;
+    border: none;
+    border-radius: 0 !important;
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1b98b9;
+}
+
+.alert {
+    border-radius: 0 !important;
+}
+
+.text-center a {
+    color: #042e64;
+    text-decoration: none;
+    font-weight: 600;
+}

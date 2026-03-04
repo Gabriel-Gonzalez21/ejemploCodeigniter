@@ -2,24 +2,26 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
 </head>
+
 <body>
 
-<h2>Iniciar sesión</h2>
+    <?php if (session()->getFlashdata('error')): ?>
+        <p style="color:white;"><?= session()->getFlashdata('error') ?></p>
+    <?php endif; ?>
 
-<?php if (session()->getFlashdata('error')): ?>
-    <p style="color:red;"><?= session()->getFlashdata('error') ?></p>
-<?php endif; ?>
+    <div>
+        <img src="/img/logoAbire.png" alt="logoAbire" class="logo">
+        <form action="/login" method="post">
+            <input type="text" placeholder="Email" name="email" required><br>
 
-<form action="/login" method="post">
-    <label>Email:</label>
-    <input type="email" name="email" required><br><br>
+            <input type="password" placeholder="Contraseña" name="password" required><br>
 
-    <label>Contraseña:</label>
-    <input type="password" name="password" required><br><br>
+            <button type="submit">Entrar</button><br>
 
-    <button type="submit">Entrar</button>
-</form>
-
+            <b>¿No tienes cuenta? <a href="/admin/dashboard">Regístrate aquí</a></b>
+        </form>
+    </div>
 </body>
 </html>

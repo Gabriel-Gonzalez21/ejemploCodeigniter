@@ -11,7 +11,7 @@
     <link href="/assets/sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- CSS personalizado -->
-    <link href="/assets/css/style.css?v=1" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
     
 </head>
 

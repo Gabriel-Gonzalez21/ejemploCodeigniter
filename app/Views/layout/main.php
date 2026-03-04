@@ -19,6 +19,7 @@
         <div class="container">
 
             <a class="navbar-brand" href="/">Agencia de Colocación</a>
+            <img src="/public/img/logoAbire.png" alt="Logo de la agencia" class="logo">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -65,6 +66,10 @@
 
     <!-- Scripts personalizados -->
     <script src="/assets/js/app.js"></script>
+
+
+
+    <?= $this->include('layout/footer') ?>
 
 </body>
 </html>

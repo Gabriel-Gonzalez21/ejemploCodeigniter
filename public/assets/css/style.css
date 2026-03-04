@@ -6,16 +6,17 @@
 /* Tipografía general */
 body {
     font-family: 'Poppins', sans-serif !important;
-    background-color: #233cc9 !important;
+    background-color: #042e64 !important;
 }
 
 /* Sidebar */
 .sidebar {
-    background-color: #004aad !important;
+    background-color: white !important;
+
 }
 
 .sidebar .nav-item .nav-link {
-    color: #ffffff !important;
+    color: #6d6b6b !important;
     font-weight: 500;
 }
 
@@ -32,7 +33,7 @@ body {
 
 /* Topbar */
 .topbar {
-    background-color: #001aff !important;
+    background-color: #042e64 !important;
 }
 
 .topbar .nav-link {
@@ -41,8 +42,8 @@ body {
 
 /* Botones */
 .btn-primary {
-    background-color: #004aad !important;
-    border-color: #004aad !important;
+    background-color: #365883 !important;
+    border-color: #365883 !important;
 }
 
 .btn-primary:hover {
@@ -86,6 +87,34 @@ body {
 
 /* Footer */
 footer.sticky-footer {
-    background-color: #004aad !important;
+    background-color: #042e64 !important;
     color: #ffffff !important;
+}
+
+
+.logo{
+    max-width: 200px;
+}
+
+
+.sidebar .nav-link i { 
+    color: #9e9e9d !important;  
+}
+
+hr{ 
+    border: none; height: 2px; background-color: #d6d6d6; 
+}
+
+
+#content{
+    background-color: white !important;
+    box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Icono candidatos*/
+.iconoCandidatos{
+    width: 100px;
+    filter: invert(100%);
+    
 }
