@@ -11,7 +11,7 @@ class UsuarioModel extends Model
 
     protected $allowedFields = [
         'usuario',      // email
-        'password',     // MD5
+        'password',     // contraseña MD5
         'nombre',
         'telefono',
         'passwordMail',

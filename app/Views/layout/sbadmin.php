@@ -12,6 +12,9 @@
 
     <!-- CSS personalizado -->
     <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="/assets/js/sidebar.js" defer></script>
     
 </head>
 

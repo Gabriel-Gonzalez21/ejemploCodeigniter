@@ -42,7 +42,7 @@ class Registro extends BaseController
         ]);
 
         // (Opcional) Enviar email de confirmación
-        // $this->enviarEmailConfirmacion($this->request->getPost('email'));
+        //$this->enviarEmailConfirmacion($this->request->getPost('email'));
         
         // Redirigir al login
         return redirect()->to('/login')->with('success', 'Registro completado. Ya puedes iniciar sesión.');

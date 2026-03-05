@@ -4,7 +4,7 @@
     <!-- Sidebar - Brand (Logo/Marca)-->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
         <div class="">
-            <img src="/img/logoAbire.png" alt="" class="logo">
+            <img src="/img/logoAbire.png" alt="" class="logo" id="logoAbire">
         </div>
     </a>
 
@@ -65,7 +65,7 @@
 
     <!-- Sidebar Toggler (Botón para ocultar el sidebar) -->
     <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        <button class="rounded-circle border-0" id="sidebarToggle" style="filter: invert(100%);"></button>
     </div>
 
 </ul>

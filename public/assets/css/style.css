@@ -118,3 +118,11 @@ hr{
     filter: invert(100%);
     
 }
+
+/*Tamaño logo Abire */
+@media (max-width: 900px) {
+    .logo {
+        width: 150px;
+    }
+    
+}
