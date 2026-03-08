@@ -1,7 +1,7 @@
-<?= $this->extend('layout/sbadmin') ?>
+<?= $this->extend('layout/public') ?>
 <?= $this->section('content') ?>
 
-<h1>Panel principal</h1>
+
 
 <h3 style="margin-top: 50px;">Registrarse como candidato o empresa</h3>
 

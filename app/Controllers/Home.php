@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function sbadmin(): string
+    public function public(): string
     {
-        return view('Views/layout/sbadmin');
+        return view('Views/layout/public');
     }
 }

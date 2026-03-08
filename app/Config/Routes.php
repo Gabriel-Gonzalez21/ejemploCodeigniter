@@ -7,7 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 // Página pública
-$routes->get('/', 'Home::sbadmin');
+$routes->get('/', 'Home::public');
 
 // Test (pública)
 $routes->get('/test', fn() => view('test'));
