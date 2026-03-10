@@ -25,12 +25,15 @@ $routes->post('candidato/auth/registro', 'Candidato\Registro::procesarRegistro')
 //Ruta publica de candidatos
 $routes->get('/candidato', 'Candidato\Dashboard::index');
 
+//Rutas privadas de candidatos
 $routes->group('candidato', function($routes) {
     $routes->get('perfil', 'Candidato\Perfil::index');
     $routes->get('perfil/editar', 'Candidato\Perfil::editar');
     $routes->post('perfil/actualizar', 'Candidato\Perfil::actualizar');
 });
 
+//Ruta de verificacion para el candidato
+$routes->get('verificar/(:any)', 'Candidato\Registro::verificar/$1');
 
 
 

@@ -15,7 +15,6 @@
         <p><strong>Email:</strong> <?= $candidato['email'] ?></p>
         <p><strong>Teléfono:</strong> <?= $candidato['telefono'] ?></p>
         <p><strong>Dirección:</strong> <?= $candidato['direccion'] ?></p>
-
         <a href="/candidato/perfil/editar" class="btn btn-primary mt-3">Editar perfil</a>
     </div>
 

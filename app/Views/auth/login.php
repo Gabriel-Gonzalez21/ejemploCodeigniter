@@ -10,7 +10,7 @@
     <?php if (session()->getFlashdata('error')): ?>
         <p style="color:white;"><?= session()->getFlashdata('error') ?></p>
     <?php endif; ?>
-
+    
     <div>
         <img src="/img/logoAbire.png" alt="logoAbire" class="logo">
         <form action="/login" method="post">
